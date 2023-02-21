@@ -1,0 +1,30 @@
+/* ********* */
+/* @VARIABLES */
+/* ********* */
+
+//Colores de la web...
+$web-colors: (
+    colorPrincipal: #7cdaf9,
+    colorRosita: #ffe9e9,
+    colorMorado: #8209f8,
+    colorBlanco: #fdf4f4,
+    );
+    
+
+//Fuentes de la web...
+@font-face {
+font-family: "RobotoRegular";
+src: url(../assets/font/WOFF2/Roboto-Regular.woff2);
+}
+@font-face {
+font-family: "RobotoBold";
+src: url(../assets/font/WOFF2/Roboto-Bold.woff2);
+}
+@font-face {
+font-family: "RobotoItalic";
+src: url(../assets/font/WOFF2/Roboto-Italic.woff2);
+}
+@font-face {
+font-family: "RobotoBlackItalic";
+src: url(../assets/font/WOFF2/Roboto-BlackItalic.woff2);
+}
