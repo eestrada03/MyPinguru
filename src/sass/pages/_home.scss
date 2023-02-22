@@ -5,78 +5,97 @@
 //Primera parte
 
 .contenedorIndex {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  padding: 20px 100px 0px 100px;
   height: 100vh;
+  background-color: #7cdaf9;
+  background-image: linear-gradient(
+    0deg,
+    #7cdaf9 0%,
+    #8ec5fc 50%,
+    #e0c3fc 100%
+  );
 }
 
 .preview {
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: space-evenly;
+  text-align: center;
   height: 100%;
+  padding: 0% 10% 0% 10%;
+  box-sizing: border-box;
+
+  .imagenhome {
+    height: 40%;
+    width: 100%;
+    background-image: url("../assets/img/smartphone/Home.webp");
+    background-size: cover;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  }
 
   h1 {
     font-family: "RobotoBold";
-    font-size: 24px;
-    color: #2e3b4c;
+    font-size: 2rem;
+    color: map-get($web-colors, colorBlanquecino);
+    text-shadow: 1px 1px 2px black;
   }
   h2 {
     font-family: "RobotoRegular";
     text-align: center;
-    font-size: 18px;
+    font-size: 1rem;
+    color: map-get($web-colors, colorBlanquecino);
+    text-shadow: 0.5px 1px 2px black;
   }
 
-  p {
+  .introhome {
     font-family: "RobotoItalic";
     text-align: center;
-    font-size: 16px;
-    padding: 10px 0px;
+    font-size: 1rem;
     margin: 0;
+    color: map-get($web-colors, colorBlanquecino);
+    text-shadow: 0.5px 0.5px 2px black;
   }
 
   .chiqui {
+    padding-top: 10%;
     font-family: "RobotoBold";
-    font-size: 12px;
+    font-size: 0.8rem;
     text-decoration: underline;
+    color: map-get($web-colors, colorBlanquecino);
+    text-shadow: 0.5px 1px 2px black;
   }
 }
 
 //Segunda parte
 
 .contenedor2Index {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: start;
-  padding: 0 20px 50px 20px;
   background-color: map-get($web-colors, colorPrincipal);
   height: 100vh;
 }
 
 .pinguindex {
+  height: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+  justify-content: space-evenly;
+  padding: 20% 10%;
+  box-sizing: border-box;
 
   h4 {
     font-family: "RobotoBlackItalic";
-    font-size: 24px;
+    font-size: 1.5rem;
     color: map-get($web-colors, colorBlanco);
-    padding-top: 85px;
-    padding-bottom: 50px;
     text-align: center;
   }
-  picture {
-    width: 90%;
-    padding-bottom: 55px;
-  }
-  img {
+  .pingulogo {
+    height: 60%;
     width: 100%;
+    background-image: url("../assets/img/smartphone/PinguInicio.webp");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
   }
   .pingustart {
     border-radius: 24px;
@@ -86,5 +105,9 @@
     width: 55%;
     font-family: "RobotoBold";
     font-size: large;
+  }
+  .loginlink {
+    text-decoration: none;
+    color: black;
   }
 }
