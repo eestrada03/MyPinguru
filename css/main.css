@@ -424,7 +424,6 @@ template {
   font-size: 1rem;
   margin: 0;
   color: #f2f2f2;
-  text-shadow: 0.5px 0.5px 2px black;
 }
 .preview .chiqui {
   padding-top: 10%;
@@ -432,7 +431,6 @@ template {
   font-size: 0.8rem;
   text-decoration: underline;
   color: #f2f2f2;
-  text-shadow: 0.5px 1px 2px black;
 }
 
 .contenedor2Index {
