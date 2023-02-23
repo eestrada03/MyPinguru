@@ -16,6 +16,7 @@
   background-color: map-get($web-colors, colorPrincipal);
   height: 100%;
   width: 100%;
+  padding: 10%;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -63,7 +64,7 @@
   background-color: map-get($web-colors, colorBlanco);
   height: 54px;
   border: none;
-  width: 90%;
+  width: 100%;
   font-family: "RobotoBold";
   font-size: 1.2rem;
   margin-top: 15px;

@@ -30,5 +30,12 @@
 - Correciones de código.
 
 # Edición login 23/02/2023
+
 - Centrado ¿Has olvidado la contraseña?.
 - Correciones de código.
+
+# Edción login y register.
+
+- Añadido padding general (10%).
+- Añadido +100% width a los inputs.
+

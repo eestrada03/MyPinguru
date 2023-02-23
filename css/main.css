@@ -577,6 +577,7 @@ template {
   background-color: #7cdaf9;
   height: 100%;
   width: 100%;
+  padding: 10%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -644,7 +645,7 @@ template {
   background-color: #fdf4f4;
   height: 54px;
   border: none;
-  width: 90%;
+  width: 100%;
   font-family: "RobotoBold";
   font-size: 1.2rem;
   margin-top: 15px;
@@ -813,6 +814,7 @@ template {
 .blueback {
   background-color: #7cdaf9;
   height: 100%;
+  padding: 10%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -886,7 +888,7 @@ template {
   background-color: #fdf4f4;
   height: 54px;
   border: none;
-  width: 80%;
+  width: 100%;
   font-family: "RobotoBold";
   font-size: 1.2rem;
   margin-top: 15px;
