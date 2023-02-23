@@ -24,8 +24,11 @@
 - Eliminado estilo del enlace al login.
 - Añadido animaciones (Pingu + ¡Encantado...!).
 
-# Edición login 23/02/2023
+# Edición home 23/02/2023
 
 - Añadido animaciones (h1,h2).
 - Correciones de código.
 
+# Edición login 23/02/2023
+- Centrado ¿Has olvidado la contraseña?.
+- Correciones de código.

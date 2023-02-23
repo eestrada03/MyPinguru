@@ -53,7 +53,6 @@
 }
 
 .forgotpass {
-  margin-left: 90px;
   font-family: "RobotoRegular";
   font-size: 1rem;
   color: map-get($web-colors, colorMorado);
@@ -68,7 +67,7 @@
   font-family: "RobotoBold";
   font-size: 1.2rem;
   margin-top: 15px;
-  padding: 0 20px 0 20px;
+  padding: 0 1rem 0 1rem;
   outline: none;
   color: map-get($web-colors, colorMorado);
 }
@@ -104,6 +103,7 @@
   background-repeat: no-repeat;
   height: 30%;
   width: 60%;
+  box-sizing: border-box;
   animation: pingulogin 2.5s ease 0s 1 normal forwards;
 }
 
