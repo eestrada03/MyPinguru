@@ -538,21 +538,23 @@ template {
 
 .h1Login {
   font-family: "RobotoBold";
-  font-size: 24px;
+  font-size: 2rem;
   color: #fdf4f4;
   margin-bottom: 0;
+  -webkit-animation: h1Login 0.5s ease 0s 1 normal forwards;
+          animation: h1Login 0.5s ease 0s 1 normal forwards;
 }
 
 .h2Login {
   font-family: "RobotoBold";
-  font-size: 18px;
+  font-size: 1.2rem;
   color: #fdf4f4;
   margin-top: 0;
 }
 
 .pLogin {
   font-family: "RobotoRegular";
-  font-size: 12px;
+  font-size: 1rem;
   color: #8209f8;
   padding-top: 20px;
 }
@@ -560,7 +562,7 @@ template {
 .forgotpass {
   margin-left: 90px;
   font-family: "RobotoRegular";
-  font-size: 12px;
+  font-size: 1rem;
   color: #8209f8;
 }
 
@@ -571,7 +573,7 @@ template {
   border: none;
   width: 90%;
   font-family: "RobotoBold";
-  font-size: large;
+  font-size: 1.2rem;
   margin-top: 15px;
   padding: 0 20px 0 20px;
   outline: none;
@@ -586,7 +588,7 @@ template {
   border: none;
   width: 55%;
   font-family: "RobotoBold";
-  font-size: large;
+  font-size: 1.2rem;
   margin-top: 20px;
 }
 
@@ -615,6 +617,107 @@ template {
   opacity: 60%;
 }
 
+.linkregister {
+  text-decoration: none;
+  color: inherit;
+}
+
+.pingulogin {
+  background-image: url("../assets/img/smartphone/PinguLogin.webp");
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 30%;
+  width: 60%;
+  -webkit-animation: pingulogin 2.5s ease 0s 1 normal forwards;
+          animation: pingulogin 2.5s ease 0s 1 normal forwards;
+}
+
+@-webkit-keyframes pingulogin {
+  0%, 100% {
+    -webkit-transform: translateY(0) rotate(0);
+            transform: translateY(0) rotate(0);
+    -webkit-transform-origin: 50% 50%;
+            transform-origin: 50% 50%;
+  }
+  15% {
+    -webkit-transform: translateY(-30px) rotate(-6deg);
+            transform: translateY(-30px) rotate(-6deg);
+  }
+  30% {
+    -webkit-transform: translateY(15px) rotate(6deg);
+            transform: translateY(15px) rotate(6deg);
+  }
+  45% {
+    -webkit-transform: translateY(-15px) rotate(-3.6deg);
+            transform: translateY(-15px) rotate(-3.6deg);
+  }
+  60% {
+    -webkit-transform: translateY(9px) rotate(2.4deg);
+            transform: translateY(9px) rotate(2.4deg);
+  }
+  75% {
+    -webkit-transform: translateY(-6px) rotate(-1.2deg);
+            transform: translateY(-6px) rotate(-1.2deg);
+  }
+}
+
+@keyframes pingulogin {
+  0%, 100% {
+    -webkit-transform: translateY(0) rotate(0);
+            transform: translateY(0) rotate(0);
+    -webkit-transform-origin: 50% 50%;
+            transform-origin: 50% 50%;
+  }
+  15% {
+    -webkit-transform: translateY(-30px) rotate(-6deg);
+            transform: translateY(-30px) rotate(-6deg);
+  }
+  30% {
+    -webkit-transform: translateY(15px) rotate(6deg);
+            transform: translateY(15px) rotate(6deg);
+  }
+  45% {
+    -webkit-transform: translateY(-15px) rotate(-3.6deg);
+            transform: translateY(-15px) rotate(-3.6deg);
+  }
+  60% {
+    -webkit-transform: translateY(9px) rotate(2.4deg);
+            transform: translateY(9px) rotate(2.4deg);
+  }
+  75% {
+    -webkit-transform: translateY(-6px) rotate(-1.2deg);
+            transform: translateY(-6px) rotate(-1.2deg);
+  }
+}
+@-webkit-keyframes h1Login {
+  0% {
+    -webkit-transform: scale(0.5);
+            transform: scale(0.5);
+    -webkit-transform-origin: 50% 100%;
+            transform-origin: 50% 100%;
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    -webkit-transform-origin: 50% 100%;
+            transform-origin: 50% 100%;
+  }
+}
+@keyframes h1Login {
+  0% {
+    -webkit-transform: scale(0.5);
+            transform: scale(0.5);
+    -webkit-transform-origin: 50% 100%;
+            transform-origin: 50% 100%;
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    -webkit-transform-origin: 50% 100%;
+            transform-origin: 50% 100%;
+  }
+}
 /* ********* */
 /* @CONTACT */
 /* ********* */
