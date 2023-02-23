@@ -15,7 +15,7 @@
 - Cambio picture a div con bgimage.
 - Añadido animaciones (Pingu + ¡HOLA!).
 
-# Edición register 23/02/2023
+# Edición register 
 
 - Fuentes de tamaño 'responsive'.
 - Correciones de código.
@@ -24,12 +24,12 @@
 - Eliminado estilo del enlace al login.
 - Añadido animaciones (Pingu + ¡Encantado...!).
 
-# Edición home 23/02/2023
+# Edición home 
 
 - Añadido animaciones (h1,h2).
 - Correciones de código.
 
-# Edición login 23/02/2023
+# Edición login 
 
 - Centrado ¿Has olvidado la contraseña?.
 - Correciones de código.
@@ -41,3 +41,6 @@
 
 # Edición register.
 - Correciones de código.
+
+# Edición login.
+- Añadido padding al formulario +15%.
