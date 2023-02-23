@@ -39,3 +39,5 @@
 - Añadido padding general (10%).
 - Añadido +100% width a los inputs.
 
+# Edición register.
+- Correciones de código.
