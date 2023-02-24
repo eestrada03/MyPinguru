@@ -44,3 +44,12 @@
 
 # Edición login.
 - Añadido padding al formulario +15%.
+
+# Creación del menú de opciones. 24/02/2023
+- Creado "menu.html".
+- Añadido estructura html.
+- Añadido Background contenedor.
+- Añadido Foto Pingu.
+- Añadido Botones
+- Añadido Estilos.
+

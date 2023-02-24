@@ -968,6 +968,115 @@ template {
             transform-origin: 50% 100%;
   }
 }
+.contenedormenu {
+  background-image: url("../assets/img/smartphone/Maquetado.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.pingumenu {
+  background-image: url("../assets/img/smartphone/Pingulogin.webp");
+  background-size: auto;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 30%;
+  width: 100%;
+  position: absolute;
+  top: 5%;
+  text-align: center;
+}
+
+.opcionesmenu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 200%;
+  width: 100%;
+  padding-top: 10%;
+}
+
+.botonmenu {
+  border-radius: 50px;
+  background-color: #7cdaf9;
+  height: 10%;
+  border: none;
+  width: 60%;
+  font-family: "RobotoBold";
+  font-size: large;
+  color: #f2f2f2;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+          box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  margin: 5%;
+}
+
+.bienvenidousuario {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 1%;
+  width: 100%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+}
+
+.h1menu {
+  font-family: "RobotoBold";
+  font-size: 1.5rem;
+  color: #f2f2f2;
+  padding: 0;
+  margin: 0;
+}
+
+.dotscontainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 8%;
+  width: 100%;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
+}
+
+.dotsidebar {
+  background-image: url("../assets/img/svg/dotsSidebar.svg");
+  background-size: auto;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100%;
+  width: 10%;
+  padding: 4% 2%;
+}
+
 /* ********* */
 /* @THEMEDARK */
 /* ********* */
