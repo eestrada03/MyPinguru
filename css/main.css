@@ -995,14 +995,16 @@ template {
 
 .pingumenu {
   background-image: url("../assets/img/smartphone/Pingulogin.webp");
-  background-size: auto;
+  background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
   height: 30%;
-  width: 100%;
+  width: 50%;
   position: absolute;
   top: 5%;
   text-align: center;
+  -webkit-animation: plus 0.5s ease 0s 1 normal forwards;
+          animation: plus 0.5s ease 0s 1 normal forwards;
 }
 
 .opcionesmenu {
@@ -1022,6 +1024,8 @@ template {
   height: 200%;
   width: 100%;
   padding-top: 10%;
+  -webkit-animation: slideright 1s ease 0s 1 normal forwards;
+          animation: slideright 1s ease 0s 1 normal forwards;
 }
 
 .botonmenu {
@@ -1051,6 +1055,8 @@ template {
       -ms-flex-pack: center;
           justify-content: center;
   text-align: center;
+  -webkit-animation: slidetop 1s ease 0s 1 normal forwards;
+          animation: slidetop 1s ease 0s 1 normal forwards;
 }
 
 .h1menu {
@@ -1082,6 +1088,91 @@ template {
   padding: 4% 2%;
 }
 
+@-webkit-keyframes jelly {
+  0% {
+    -webkit-transform: scale3d(1, 1, 1);
+            transform: scale3d(1, 1, 1);
+  }
+  30% {
+    -webkit-transform: scale3d(1.25, 0.75, 1);
+            transform: scale3d(1.25, 0.75, 1);
+  }
+  40% {
+    -webkit-transform: scale3d(0.75, 1.25, 1);
+            transform: scale3d(0.75, 1.25, 1);
+  }
+  50% {
+    -webkit-transform: scale3d(1.15, 0.85, 1);
+            transform: scale3d(1.15, 0.85, 1);
+  }
+  65% {
+    -webkit-transform: scale3d(0.95, 1.05, 1);
+            transform: scale3d(0.95, 1.05, 1);
+  }
+  75% {
+    -webkit-transform: scale3d(1.05, 0.95, 1);
+            transform: scale3d(1.05, 0.95, 1);
+  }
+  100% {
+    -webkit-transform: scale3d(1, 1, 1);
+            transform: scale3d(1, 1, 1);
+  }
+}
+
+@keyframes jelly {
+  0% {
+    -webkit-transform: scale3d(1, 1, 1);
+            transform: scale3d(1, 1, 1);
+  }
+  30% {
+    -webkit-transform: scale3d(1.25, 0.75, 1);
+            transform: scale3d(1.25, 0.75, 1);
+  }
+  40% {
+    -webkit-transform: scale3d(0.75, 1.25, 1);
+            transform: scale3d(0.75, 1.25, 1);
+  }
+  50% {
+    -webkit-transform: scale3d(1.15, 0.85, 1);
+            transform: scale3d(1.15, 0.85, 1);
+  }
+  65% {
+    -webkit-transform: scale3d(0.95, 1.05, 1);
+            transform: scale3d(0.95, 1.05, 1);
+  }
+  75% {
+    -webkit-transform: scale3d(1.05, 0.95, 1);
+            transform: scale3d(1.05, 0.95, 1);
+  }
+  100% {
+    -webkit-transform: scale3d(1, 1, 1);
+            transform: scale3d(1, 1, 1);
+  }
+}
+@-webkit-keyframes slidetop {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(-250px);
+            transform: translateY(-250px);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+}
+@keyframes slidetop {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(-250px);
+            transform: translateY(-250px);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+}
 /* ********* */
 /* @THEMEDARK */
 /* ********* */

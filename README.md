@@ -57,3 +57,6 @@
 - Añadido link al menu desde acceder.
 - Elminado estilos al link.
 
+# Edición menu.
+- Correciones de código.
+- Añadido animaciones.
