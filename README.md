@@ -53,3 +53,7 @@
 - Añadido Botones
 - Añadido Estilos.
 
+# Edición login.
+- Añadido link al menu desde acceder.
+- Elminado estilos al link.
+

@@ -795,6 +795,11 @@ template {
             transform-origin: 50% 100%;
   }
 }
+.logintomenu {
+  text-decoration: none;
+  color: inherit;
+}
+
 /* ********* */
 /* @CONTACT */
 /* ********* */
