@@ -60,3 +60,6 @@
 # Edición menu.
 - Correciones de código.
 - Añadido animaciones.
+
+# Edición login.
+- Ajustado padding.

@@ -609,7 +609,7 @@ template {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 0% 15%;
+  padding: 0% 12%;
 }
 
 .h1Login {
@@ -994,7 +994,7 @@ template {
 }
 
 .pingumenu {
-  background-image: url("../assets/img/smartphone/Pingulogin.webp");
+  background-image: url("../assets/img/smartphone/PinguLogin.webp");
   background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
