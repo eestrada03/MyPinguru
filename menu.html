@@ -8,20 +8,41 @@
     <link rel="stylesheet" href="css/main.css" />
   </head>
   <body>
-    <div class="contenedormenu">
-      <div class="dotscontainer">
-        <div class="dotsidebar"></div>
-      </div>
-      <div class="bienvenidousuario">
-        <h1 class="h1menu">Bienvenido, Usuario.</h1>
-      </div>
-      <div class="pingumenu"></div>
-
-      <section class="opcionesmenu">
-        <input class="botonmenu" type="button" value="MEDITACIÓN" />
-        <input class="botonmenu" type="button" value="PRODUCTOS" />
-        <input class="botonmenu" type="button" value="ARTÍCULOS" />
+    <div id="sidebar" class="sidebar">
+      <section class="logoBar">
+        <img
+          class="userLogo"
+          src="../assets/img/svg/avatarsUserLogo.svg"
+          alt="LogoUsuario"
+        />
+        <h2 class="userBar">Usuario</h2>
+      </section>
+      <section class="opcionesBar">
+        <ul class="listaSideBar">
+          <li><a class="listaSideBarItem" href="#">Mi Perfil</a></li>
+          <li><a class="listaSideBarItem" href="#">Ayuda</a></li>
+          <li><a class="listaSideBarItem" href="#">Cerrar Sesión</a></li>
+        </ul>
       </section>
     </div>
+
+    <div class="contenedormenu">
+      <section class="headermenu">
+        <div class="dotscontainer">
+          <div id="sidebarcall" class="dotsidebar"></div>
+        </div>
+        <div class="bienvenidousuario">
+          <h1 class="h1menu">Bienvenido Usuario.</h1>
+        </div>
+        <div class="pingumenu"></div>
+      </section>
+
+      <section class="opcionesmenu">
+        <a class="botonmenu" href="">MEDITACIÓN</a>
+        <a class="botonmenu" href="">TIENDA</a>
+        <a class="botonmenu" href="">ARTÍCULOS</a>
+      </section>
+    </div>
+    <script src="js/sidebar.js"></script>
   </body>
 </html>

@@ -10,17 +10,18 @@
   <body>
     <div class="contenedorLogin">
       <section class="blueback">
-        <div class="pingulogin"></div>
-        <h1 class="h1Login">¡Hola!</h1>
-        <h2 class="h2Login">Accede a tu sesión</h2>
-        <form class="formLogin" action="">
+        <div id="pingulogin" class="pingulogin"></div>
+        <h1 id="h1Login" class="h1Login">¡Hola!</h1>
+        <h2 id="h2Login" class="h2Login">Accede a tu sesión</h2>
+        <form name="formLogin" class="formLogin" method="POST" action="menu.html">
           <input class="inputLogin"type="text" name="user" id="user" placeholder="Usuario"></input>
           <input class="inputLogin" type="password" name="password" id="password" placeholder="Contraseña" />
           <p class="forgotpass">¿Has olvidado la contraseña?</p>
-          <button class="buttonLogin" type="submit"><a class="logintomenu" href="menu.html">ACCEDER</a></button>
+          <button class="buttonLogin" type="submit"><a class="logintomenu">ACCEDER</a></button>
           <p class="pLogin">¿Todavía no tienes cuenta? <a class="linkregister" href="register.html"><b>Crear</b></a></p>
         </form>
       </section>
     </div>
+    <script src="js/login.js"></script>
   </body>
 </html>

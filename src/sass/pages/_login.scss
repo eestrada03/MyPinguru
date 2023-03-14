@@ -22,6 +22,7 @@
   justify-content: center;
   align-items: center;
   box-sizing: border-box;
+  text-align: center;
 }
 
 .formLogin {
@@ -36,7 +37,7 @@
   font-family: "RobotoBold";
   font-size: 2rem;
   color: map-get($web-colors, colorBlanco);
-  margin-bottom: 0;
+  margin: 0;
   animation: h1Login 0.5s ease 0s 1 normal forwards;
 }
 
@@ -44,7 +45,7 @@
   font-family: "RobotoBold";
   font-size: 1.2rem;
   color: map-get($web-colors, colorBlanco);
-  margin-top: 0;
+  margin-top: 1rem;
 }
 
 .pLogin {
@@ -109,6 +110,15 @@
   animation: pingulogin 2.5s ease 0s 1 normal forwards;
 }
 
+//Error
+.errorLogin::placeholder {
+  color: red;
+}
+
+.errorLoginPinguBounce {
+  animation: bounce 1s ease 0s 1;
+}
+
 //Animacion pingu.
 @keyframes pingulogin {
   0%,
@@ -148,6 +158,19 @@
   100% {
     transform: scale(1);
     transform-origin: 50% 100%;
+  }
+}
+
+//Animación bounce...
+@keyframes bounce {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+  100% {
+    transform: translateY(0);
   }
 }
 

@@ -593,6 +593,7 @@ template {
           align-items: center;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  text-align: center;
 }
 
 .formLogin {
@@ -616,7 +617,7 @@ template {
   font-family: "RobotoBold";
   font-size: 2rem;
   color: #fdf4f4;
-  margin-bottom: 0;
+  margin: 0;
   -webkit-animation: h1Login 0.5s ease 0s 1 normal forwards;
           animation: h1Login 0.5s ease 0s 1 normal forwards;
 }
@@ -625,7 +626,7 @@ template {
   font-family: "RobotoBold";
   font-size: 1.2rem;
   color: #fdf4f4;
-  margin-top: 0;
+  margin-top: 1rem;
 }
 
 .pLogin {
@@ -708,6 +709,31 @@ template {
           box-sizing: border-box;
   -webkit-animation: pingulogin 2.5s ease 0s 1 normal forwards;
           animation: pingulogin 2.5s ease 0s 1 normal forwards;
+}
+
+.errorLogin::-webkit-input-placeholder {
+  color: red;
+}
+
+.errorLogin::-moz-placeholder {
+  color: red;
+}
+
+.errorLogin:-ms-input-placeholder {
+  color: red;
+}
+
+.errorLogin::-ms-input-placeholder {
+  color: red;
+}
+
+.errorLogin::placeholder {
+  color: red;
+}
+
+.errorLoginPinguBounce {
+  -webkit-animation: bounce 1s ease 0s 1;
+          animation: bounce 1s ease 0s 1;
 }
 
 @-webkit-keyframes pingulogin {
@@ -793,6 +819,34 @@ template {
             transform: scale(1);
     -webkit-transform-origin: 50% 100%;
             transform-origin: 50% 100%;
+  }
+}
+@-webkit-keyframes bounce {
+  0% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+  50% {
+    -webkit-transform: translateY(-20px);
+            transform: translateY(-20px);
+  }
+  100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+}
+@keyframes bounce {
+  0% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+  50% {
+    -webkit-transform: translateY(-20px);
+            transform: translateY(-20px);
+  }
+  100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
   }
 }
 .logintomenu {
@@ -998,13 +1052,28 @@ template {
   background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
-  height: 30%;
-  width: 50%;
+  height: 25vh;
+  width: 100vw;
   position: absolute;
-  top: 5%;
+  top: 10%;
   text-align: center;
   -webkit-animation: plus 0.5s ease 0s 1 normal forwards;
           animation: plus 0.5s ease 0s 1 normal forwards;
+}
+
+.headermenu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 30vh;
+  width: 100vw;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .opcionesmenu {
@@ -1018,12 +1087,11 @@ template {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  height: 200%;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  height: 70vh;
   width: 100%;
-  padding-top: 10%;
   -webkit-animation: slideright 1s ease 0s 1 normal forwards;
           animation: slideright 1s ease 0s 1 normal forwards;
 }
@@ -1031,15 +1099,16 @@ template {
 .botonmenu {
   border-radius: 50px;
   background-color: #7cdaf9;
-  height: 10%;
+  text-align: center;
+  padding: 3.5vh 0px;
+  width: 70vw;
   border: none;
-  width: 60%;
+  text-decoration: none;
   font-family: "RobotoBold";
   font-size: large;
   color: #f2f2f2;
   -webkit-box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
           box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-  margin: 5%;
 }
 
 .bienvenidousuario {
@@ -1071,7 +1140,7 @@ template {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  height: 8%;
+  height: 6vh;
   width: 100%;
   -webkit-box-pack: end;
       -ms-flex-pack: end;
@@ -1085,7 +1154,87 @@ template {
   background-repeat: no-repeat;
   height: 100%;
   width: 10%;
-  padding: 4% 2%;
+  padding: 2% 2%;
+}
+
+.sidebar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  width: 50vw;
+  height: 100vh;
+  background-color: #ffe9e9;
+  display: none;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.showsidebar {
+  display: -webkit-box !important;
+  display: -ms-flexbox !important;
+  display: flex !important;
+}
+
+.logoBar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+}
+
+.opcionesBar {
+  -webkit-box-flex: 2;
+      -ms-flex-positive: 2;
+          flex-grow: 2;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+}
+
+.userLogo {
+  width: 30vw;
+}
+
+.userBar {
+  font-family: "RobotoBold";
+}
+
+.listaSideBar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 35%;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  font-family: "RobotoRegular";
+}
+
+.listaSideBarItem {
+  text-decoration: none;
+  font-size: 1.2rem;
+  color: black;
 }
 
 @-webkit-keyframes jelly {
