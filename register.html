@@ -10,16 +10,15 @@
   <body>
     <div class="contenedorRegister">
       <section class="blueback">
-        <div class="pinguregister"></div>
-        <h1 class="h1Register">¡Encantado de conocerte!</h1>
-        <form class="formRegister" action="">
+        <div id="pinguregister" class="pinguregister"></div>
+        <h1 id="h1Register" class="h1Register">¡Encantado de conocerte!</h1>
+        <form name="formRegister" class="formRegister" action="login.html">
           <input
             class="inputRegister"
             type="text"
             name="user"
             id="user"
             placeholder="Usuario"
-            required
           />
           <input
             class="inputRegister"
@@ -27,7 +26,6 @@
             name="email"
             id="email"
             placeholder="Email"
-            required
           />
           <input
             class="inputRegister"
@@ -35,7 +33,6 @@
             name="password"
             id="password"
             placeholder="Contraseña"
-            required
           />
           <input
             class="inputRegister"
@@ -43,19 +40,12 @@
             name="rpassword"
             id="rpassword"
             placeholder="Repetir contraseña"
-            required
           />
           <article class="terminosRegister">
-            <input
-              class="terms"
-              type="checkbox"
-              name="terms"
-              id="terms"
-              required
-            />
-            <p class="tyc">Acepto los Términos y Condiciones</p>
+            <input class="terms" type="checkbox" name="terms" id="terms" />
+            <p id="tyc" class="tyc">Acepto los Términos y Condiciones</p>
           </article>
-          <button class="buttonRegister" type="submit">ACCEDER</button>
+          <button class="buttonRegister" type="submit">CREAR</button>
           <p class="pRegister">
             ¿Ya tienes una cuenta?
             <a class="registertologin" href="login.html"><b>Accede</b></a>
@@ -63,5 +53,6 @@
         </form>
       </section>
     </div>
+    <script src="js/register.js"></script>
   </body>
 </html>

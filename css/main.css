@@ -1013,6 +1013,37 @@ template {
   color: inherit;
 }
 
+.errorRegister::-webkit-input-placeholder {
+  color: red;
+}
+
+.errorRegister::-moz-placeholder {
+  color: red;
+}
+
+.errorRegister:-ms-input-placeholder {
+  color: red;
+}
+
+.errorRegister::-ms-input-placeholder {
+  color: red;
+}
+
+.errorRegister::placeholder {
+  color: red;
+}
+
+.termsnotcheck {
+  color: red;
+  -webkit-animation: shake 0.7s ease 0.2s 1 normal;
+          animation: shake 0.7s ease 0.2s 1 normal;
+}
+
+.pingushake {
+  -webkit-animation: shake 0.7s ease 0.2s 1 normal;
+          animation: shake 0.7s ease 0.2s 1 normal;
+}
+
 @keyframes plus {
   0% {
     -webkit-transform: scale(0.5);
@@ -1025,6 +1056,50 @@ template {
             transform: scale(1);
     -webkit-transform-origin: 50% 100%;
             transform-origin: 50% 100%;
+  }
+}
+@-webkit-keyframes shake {
+  0% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+  25% {
+    -webkit-transform: translateX(5px);
+            transform: translateX(5px);
+  }
+  50% {
+    -webkit-transform: translateX(-5px);
+            transform: translateX(-5px);
+  }
+  75% {
+    -webkit-transform: translateX(5px);
+            transform: translateX(5px);
+  }
+  100% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+}
+@keyframes shake {
+  0% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+  25% {
+    -webkit-transform: translateX(5px);
+            transform: translateX(5px);
+  }
+  50% {
+    -webkit-transform: translateX(-5px);
+            transform: translateX(-5px);
+  }
+  75% {
+    -webkit-transform: translateX(5px);
+            transform: translateX(5px);
+  }
+  100% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
   }
 }
 .contenedormenu {
@@ -1162,7 +1237,7 @@ template {
   top: 0;
   left: 0;
   z-index: 2;
-  width: 50vw;
+  width: 60vw;
   height: 100vh;
   background-color: #ffe9e9;
   display: none;
