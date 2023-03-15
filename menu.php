@@ -15,13 +15,16 @@
           src="assets/img/svg/avatarsUserLogo.svg"
           alt="LogoUsuario"
         />
-        <h2 class="userBar">Usuario</h2>
+        <h2 class="userBar"><?php
+          session_start();
+          echo $_SESSION['user'];
+          ?></h2>
       </section>
       <section class="opcionesBar">
         <ul class="listaSideBar">
-          <li><a class="listaSideBarItem" href="#">Mi Perfil</a></li>
+          <li><a class="listaSideBarItem" href="miperfil.php">Mi Perfil</a></li>
           <li><a class="listaSideBarItem" href="#">Ayuda</a></li>
-          <li><a class="listaSideBarItem" href="#">Cerrar Sesión</a></li>
+          <li><a class="listaSideBarItem" href="php/gestionbdd.php?logout=true">Cerrar Sesión</a></li>
         </ul>
       </section>
     </div>
@@ -32,7 +35,10 @@
           <div id="sidebarcall" class="dotsidebar"></div>
         </div>
         <div class="bienvenidousuario">
-          <h1 class="h1menu">Bienvenido Usuario.</h1>
+          <h1 class="h1menu"><?php
+          
+          echo "Bienvenido, ".$_SESSION['user'];
+          ?></h1>
         </div>
         <div class="pingumenu"></div>
       </section>

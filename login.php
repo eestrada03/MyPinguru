@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>MyPinguru</title>
+    <title>MyPinguru - Login</title>
     <link rel="stylesheet" href="css/main.css" />
   </head>
   <body>
@@ -13,12 +13,12 @@
         <div id="pingulogin" class="pingulogin"></div>
         <h1 id="h1Login" class="h1Login">¡Hola!</h1>
         <h2 id="h2Login" class="h2Login">Accede a tu sesión</h2>
-        <form name="formLogin" class="formLogin" method="POST" action="menu.html">
+        <form name="formLogin" class="formLogin" method="POST" action="php/gestionbdd.php?form=login">
           <input class="inputLogin"type="text" name="user" id="user" placeholder="Usuario"></input>
           <input class="inputLogin" type="password" name="password" id="password" placeholder="Contraseña" />
           <p class="forgotpass">¿Has olvidado la contraseña?</p>
           <button class="buttonLogin" type="submit"><a class="logintomenu">ACCEDER</a></button>
-          <p class="pLogin">¿Todavía no tienes cuenta? <a class="linkregister" href="register.html"><b>Crear</b></a></p>
+          <p class="pLogin">¿Todavía no tienes cuenta? <a class="linkregister" href="register.php"><b>Crear</b></a></p>
         </form>
       </section>
     </div>
