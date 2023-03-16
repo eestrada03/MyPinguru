@@ -19,20 +19,22 @@
         if (isset($_GET["error"])){
 
           $error = $_GET["error"];
+
           switch ($error) {
             case '14':
-              $msg = "Contraseña incorrecta.";
-              echo $msg;
+              echo "Contraseña incorrecta.";
               break;
             case '15':
-              $msg = "El usuario no existe.";
-              echo $msg;
+              echo "El usuario no existe.";
               break;
             
             default:
               echo $msg;
               break;
           }
+
+        }else {
+          echo $msg;
         }
         
         ?></h2>
