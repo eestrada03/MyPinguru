@@ -208,7 +208,8 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST' && $update == ("user"||"email"||"passwo
  
         }
     }else {
-        echo "Contraseña incorrecta";
+        header("Location:../miperfil.php?error=007");
+        exit();
     }
 }
 

@@ -9,6 +9,12 @@
 </head>
 <body>
     <div class="contenedorPerfil">
+        <h1><?php if (isset($_GET['error'])) {
+            $error = $_GET['error'];
+            if ($error == 007) {
+                echo "Contraseña incorrecta.";
+            }
+        }?></h1>
     <form class="formPerfil" action="">
         <label for="user">Usuario: 
         <?php 
