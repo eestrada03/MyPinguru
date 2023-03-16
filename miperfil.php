@@ -19,11 +19,12 @@
         <?php 
         echo $_SESSION['email'];
         ?></label>
-        <button class="botonperfil">Cambiar usuario</button>
-        <button class="botonperfil">Cambiar contraseña</button>
-        <button class="botonperfil">Cambiar email</button>
+        <a id="popcall" class="popcall" href="update.php?change=user">Cambiar usuario</a>
+        <a id="popcall" class="popcall" href="update.php?change=email">Cambiar email</a>
+        <a id="popcall" class="popcall" href="update.php?change=password">Cambiar contraseña</a>
     </form>
     </div>
-    
+    <a href="menu.php"><div class="retroceder"></div></a>
+    <script src="js/popup.js"></script>
 </body>
 </html>

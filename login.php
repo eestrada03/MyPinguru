@@ -12,7 +12,30 @@
       <section class="blueback">
         <div id="pingulogin" class="pingulogin"></div>
         <h1 id="h1Login" class="h1Login">¡Hola!</h1>
-        <h2 id="h2Login" class="h2Login">Accede a tu sesión</h2>
+        <h2 id="h2Login" class="h2Login">
+        <?php
+        $msg = "¡Accede a tu cuenta!";
+
+        if (isset($_GET["error"])){
+
+          $error = $_GET["error"];
+          switch ($error) {
+            case '14':
+              $msg = "Contraseña incorrecta.";
+              echo $msg;
+              break;
+            case '15':
+              $msg = "El usuario no existe.";
+              echo $msg;
+              break;
+            
+            default:
+              echo $msg;
+              break;
+          }
+        }
+        
+        ?></h2>
         <form name="formLogin" class="formLogin" method="POST" action="php/gestionbdd.php?form=login">
           <input class="inputLogin"type="text" name="user" id="user" placeholder="Usuario"></input>
           <input class="inputLogin" type="password" name="password" id="password" placeholder="Contraseña" />

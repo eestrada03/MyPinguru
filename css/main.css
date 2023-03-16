@@ -649,7 +649,8 @@ template {
   border: none;
   width: 100%;
   font-family: "RobotoBold";
-  font-size: 1.2rem;
+  font-size: 1.5rem;
+  text-align: center;
   margin-top: 15px;
   padding: 0 1rem 0 1rem;
   outline: none;
@@ -953,7 +954,8 @@ template {
   border: none;
   width: 100%;
   font-family: "RobotoBold";
-  font-size: 1.2rem;
+  font-size: 1.5rem;
+  text-align: center;
   margin-top: 15px;
   padding: 0 1rem 0 1rem;
   outline: none;
@@ -1400,7 +1402,7 @@ template {
 .contenedorPerfil {
   height: 100vh;
   width: 100vw;
-  background-color: #ffe9e9;
+  background-color: #7cdaf9;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1420,8 +1422,6 @@ template {
   height: 50vh;
   padding: 2rem;
   background-color: #7cdaf9;
-  border-radius: 5px;
-  border: white 5px solid;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1434,19 +1434,131 @@ template {
           justify-content: space-evenly;
 }
 
-.botonperfil {
+.popcall {
+  text-decoration: none;
   border-radius: 50px;
-  background-color: #ffe9e9;
+  background-color: #f2f2f2;
+  text-align: center;
+  padding: 3.5vh 0px;
+  width: 70vw;
+  border: none;
+  text-decoration: none;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+          box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  text-decoration: none;
+  font-family: "RobotoBold";
+  font-size: large;
+  color: black;
+}
+
+.retroceder {
+  position: absolute;
+  top: 2rem;
+  right: 2rem;
+  background-image: url("../assets/img/svg/goback.svg");
+  background-position: center;
+  background-size: contain;
+  height: 3rem;
+  width: 3rem;
+}
+
+.changeparam {
+  height: 100%;
+  width: 100%;
+  background-color: #7cdaf9;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  font-size: 2rem;
+  font-family: "RobotoBold";
+  color: #f2f2f2;
+}
+
+.showchangeparam {
+  display: -webkit-box !important;
+  display: -ms-flexbox !important;
+  display: flex !important;
+  position: absolute;
+  z-index: 3;
+  height: 100%;
+  width: 100vw;
+  background-color: #7cdaf9;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  font-size: 2rem;
+  font-family: "RobotoBold";
+  color: #f2f2f2;
+}
+
+.param {
+  width: 80%;
+  overflow: scroll;
+  border-radius: 24px;
+  background-color: #fdf4f4;
+  height: 4rem;
+  border: none;
+  font-family: "RobotoBold";
+  font-size: 1.2rem;
+  margin-top: 15px;
+  padding: 0 1rem 0 1rem;
+  outline: none;
+  color: #8209f8;
+  text-align: center;
+}
+
+.actualiza {
+  border-radius: 50px;
+  background-color: #f2f2f2;
   text-align: center;
   padding: 3.5vh 0px;
   width: 70vw;
   border: none;
   text-decoration: none;
   font-family: "RobotoBold";
-  font-size: large;
+  font-size: 2rem;
   color: black;
   -webkit-box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
           box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.param::-webkit-input-placeholder {
+  text-align: center;
+}
+
+.param::-moz-placeholder {
+  text-align: center;
+}
+
+.param:-ms-input-placeholder {
+  text-align: center;
+}
+
+.param::-ms-input-placeholder {
+  text-align: center;
+}
+
+.param::placeholder {
+  text-align: center;
 }
 
 /* ********* */

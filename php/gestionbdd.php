@@ -18,17 +18,17 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST' && $form == "register") {
     //Validación de datos:
 
     //Limitación del número de caracteres
-    if (strlen($user > 20)) {
+    if (strlen($user) > 20) {
         header("Location:../register.php?error=11");
         exit();
     }
 
-    if (strlen($email > 256)) {
+    if (strlen($email) > 256) {
         header("Location:../register.php?error=21");
         exit();
     }
 
-    if (strlen($password > 64)) {
+    if (strlen($password) > 64) {
         header("Location:../register.php?error=31");
         exit();
     }
@@ -110,14 +110,110 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST' && $form == "login"){
             header("Location:../menu.php");
             exit();
         }else {
-            echo "Contraseña incorrecta";
+            header("Location:../login.php?error=14");
+            exit();
         }
       }else {
-        echo "El usuario no existe";
+        header("Location:../login.php?error=15");
+        exit();
       }
 } 
 
-if ($logout == "true") {
+//Cambiar datos del perfil:
+$update = $_GET["update"];
+if ($_SERVER['REQUEST_METHOD'] == 'POST' && $update == ("user"||"email"||"password")) {
+    $password = $_POST["password"];
+    $param = $_POST["param"];
+    //Verifico que la contraseña es correcta.
+    session_start();    
+    $user = $_SESSION['user'];
+    $sql = "SELECT password FROM users WHERE user = '$user'";
+    $objpass = $pdo->query($sql);
+    $passverify = $objpass->fetchColumn();
+    if ($passverify == $password){
+        echo "Contraseña correcta";
+        //Si la contraseña es correcta, se procede a cambiar el parámetro deseado.
+        switch ($update) {
+            case 'user':
+                $newuser = $param;  
+                //Valido el parámetro:
+                //Limitación del número de caracteres
+                if (strlen($newuser > 20)) {
+                header("Location:../miperfil.php?error=11");
+                exit();
+                }
+                //Campo vacío
+                if ($newuser == "") {
+                    header("Location:../miperfil.php?error=12");
+                    exit();
+                }
+
+                //Una vez validado, actualizo el usuario en la base de datos.
+                $sql = "UPDATE users SET user = '$newuser' WHERE user = '$user'";
+                $stmt = $pdo->prepare($sql);
+                $stmt -> execute();
+                $_SESSION['user'] = $newuser;
+                //Usuario actualizado.
+                header("Location:../miperfil.php");
+                break;
+
+                case 'email':
+                $newemail = $param;
+                $email = $_SESSION['email'];
+                //Valido el parámetro:
+                //Limitación del número de caracteres
+                if (strlen($newemail > 256)) {
+                header("Location:../miperfil.php?error=21");
+                exit();
+                }
+                //Campo vacío
+                if ($newemail == "") {
+                    header("Location:../miperfil.php?error=12");
+                    exit();
+                }
+
+                //Una vez validado, actualizo el email en la base de datos.
+                $sql = "UPDATE users SET email = '$newemail' WHERE email = '$email'";
+                $stmt = $pdo->prepare($sql);
+                $stmt -> execute();
+                $_SESSION['email'] = $newemail;
+                //Email actualizado.
+                header("Location:../miperfil.php");
+                break;
+
+                case 'password':
+                $newpassword = $param;
+                $password = $_SESSION['password'];
+                //Valido el parámetro:
+                //Limitación del número de caracteres
+                if (strlen($newpassword > 64)) {
+                header("Location:../miperfil.php?error=31");
+                exit();
+                }
+                //Campo vacío
+                if ($newpassword == "") {
+                    header("Location:../miperfil.php?error=12");
+                    exit();
+                }
+
+                //Una vez validado, actualizo el password en la base de datos.
+                $sql = "UPDATE users SET password = '$newpassword' WHERE user = '$user'";
+                $stmt = $pdo->prepare($sql);
+                $stmt -> execute();
+                $_SESSION['password'] = $newpassword;
+                //Contraseña actualizada.
+                header("Location:../miperfil.php");
+                break;
+               
+ 
+        }
+    }else {
+        echo "Contraseña incorrecta";
+    }
+}
+
+//Cerrar sesión:
+if (isset($logout) && $logout == "true") {
     session_destroy();
     header("Location:../index.html");
 }
