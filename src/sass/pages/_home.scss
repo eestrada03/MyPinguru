@@ -145,3 +145,62 @@
     transform: translateX(0);
   }
 }
+
+@media screen and (min-width: 768px) {
+  .hometext {
+    -webkit-box-pack: start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+  }
+
+  .preview {
+    padding: 5% 20%;
+  }
+
+  .preview .imagenhome {
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 50%;
+    width: 50%;
+    background-image: url(../assets/img/smartphone/Home.webp);
+    background-size: cover;
+    border-radius: 10px;
+    -webkit-box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  }
+
+  .preview h1 {
+    font-size: 3rem;
+  }
+
+  .preview h2 {
+    font-size: 1.5rem;
+  }
+
+  .preview .introhome {
+    font-size: 1.2rem;
+  }
+
+  .preview .chiqui {
+    font-size: 1rem;
+  }
+
+  .pinguindex {
+    padding: 3%;
+  }
+
+  .pinguindex h4 {
+    font-size: 2rem;
+  }
+
+  .pinguindex .pingulogo {
+    height: 80%;
+  }
+
+  .pinguindex .pingustart {
+    height: 5rem;
+    font-size: 2rem;
+    width: 20vw;
+    border-radius: 50px;
+  }
+}
