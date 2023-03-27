@@ -180,3 +180,9 @@
   text-decoration: none;
   color: inherit;
 }
+
+@media (min-width: 768px) {
+  .pingulogin {
+    background-image: url("../assets/img/desktop/Pingulogo.webp");
+  }
+}

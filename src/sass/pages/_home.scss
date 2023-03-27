@@ -2,6 +2,15 @@
 /* @HOME */
 /* ********* */
 
+html,
+body {
+  scroll-behavior: smooth;
+}
+
+a {
+  outline: none;
+}
+
 //Primera parte
 
 .hometext {
@@ -162,7 +171,7 @@
     background-position: center;
     height: 50%;
     width: 50%;
-    background-image: url(../assets/img/smartphone/Home.webp);
+    background-image: url("../assets/img/desktop/HomeIMG.webp");
     background-size: cover;
     border-radius: 10px;
     -webkit-box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
@@ -195,6 +204,7 @@
 
   .pinguindex .pingulogo {
     height: 80%;
+    background-image: url("../assets/img/desktop/PinguHome.webp");
   }
 
   .pinguindex .pingustart {

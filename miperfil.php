@@ -31,6 +31,5 @@
     </form>
     </div>
     <a href="menu.php"><div class="retroceder"></div></a>
-    <script src="js/popup.js"></script>
 </body>
 </html>

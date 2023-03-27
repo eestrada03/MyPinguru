@@ -44,9 +44,9 @@
       </section>
 
       <section class="opcionesmenu">
-        <a class="botonmenu" href="">MEDITACIÓN</a>
-        <a class="botonmenu" href="">TIENDA</a>
-        <a class="botonmenu" href="">ARTÍCULOS</a>
+        <a class="botonmenu" href="audios.php">MEDITACIÓN</a>
+        <a class="botonmenu" href="tienda.php">TIENDA</a>
+        <a class="botonmenu" href="articulos.php">ARTÍCULOS</a>
       </section>
     </div>
     <script src="js/sidebar.js"></script>

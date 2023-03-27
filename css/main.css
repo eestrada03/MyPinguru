@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /* ********* */
 /* @NORMALIZE */
 /* ********* */
@@ -369,6 +370,15 @@ template {
 /* ********* */
 /* @HOME */
 /* ********* */
+html,
+body {
+  scroll-behavior: smooth;
+}
+
+a {
+  outline: none;
+}
+
 .hometext {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -573,7 +583,7 @@ template {
     background-position: center;
     height: 50%;
     width: 50%;
-    background-image: url(../assets/img/smartphone/Home.webp);
+    background-image: url("../assets/img/desktop/HomeIMG.webp");
     background-size: cover;
     border-radius: 10px;
     -webkit-box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
@@ -599,6 +609,7 @@ template {
   }
   .pinguindex .pingulogo {
     height: 80%;
+    background-image: url("../assets/img/desktop/PinguHome.webp");
   }
   .pinguindex .pingustart {
     height: 5rem;
@@ -903,6 +914,11 @@ template {
   color: inherit;
 }
 
+@media (min-width: 768px) {
+  .pingulogin {
+    background-image: url("../assets/img/desktop/Pingulogo.webp");
+  }
+}
 /* ********* */
 /* @CONTACT */
 /* ********* */
@@ -1150,6 +1166,11 @@ template {
   100% {
     -webkit-transform: translateX(0);
             transform: translateX(0);
+  }
+}
+@media screen and (min-width: 768px) {
+  .pinguregister {
+    background-image: url("../assets/img/desktop/Pingulogo.webp");
   }
 }
 .contenedormenu {
@@ -1447,6 +1468,83 @@ template {
             transform: translateY(0);
   }
 }
+@media (min-width: 768px) {
+  .contenedormenu {
+    background-image: url("../assets/img/desktop/Maquetado.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    height: 100vh;
+    width: 100vw;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .pingumenu {
+    background-image: url("../assets/img/desktop/Pingulogo.webp");
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 28vh;
+    width: 100%;
+    position: absolute;
+    top: 15%;
+    text-align: center;
+    -webkit-animation: plus 0.5s ease 0s 1 normal forwards;
+            animation: plus 0.5s ease 0s 1 normal forwards;
+  }
+  .opcionesmenu {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+    height: 80vh;
+    padding-top: 7rem;
+    -webkit-animation: slideright 1s ease 0s 1 normal forwards;
+            animation: slideright 1s ease 0s 1 normal forwards;
+  }
+  .botonmenu {
+    border-radius: 50px;
+    background-color: #7cdaf9;
+    text-align: center;
+    padding: 4.5vh 0px;
+    width: 23vw;
+    border: none;
+    text-decoration: none;
+    font-family: "RobotoBold";
+    font-size: 1.5rem;
+    color: #f2f2f2;
+    -webkit-box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  }
+  .headermenu {
+    height: 40vh;
+  }
+  .sidebar {
+    width: 40vw;
+  }
+  .userLogo {
+    height: 20vh;
+  }
+}
 .contenedorPerfil {
   height: 100vh;
   width: 100vw;
@@ -1625,8 +1723,13 @@ template {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  padding: 3rem;
-  background-color: #f2f2f2;
+  padding: 5rem 3rem;
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(15%, #7cdaf9), color-stop(15%, white));
+  background-image: linear-gradient(to bottom, #7cdaf9 15%, white 15%);
+}
+
+#audio {
+  padding: 2rem 0;
 }
 
 .mainaudio {
@@ -1658,11 +1761,6 @@ template {
 
 #audio-description {
   font-size: 1.2rem;
-}
-
-#audio-img {
-  height: auto;
-  width: 100%;
 }
 
 .audioslist {
@@ -1722,6 +1820,210 @@ template {
           justify-content: center;
 }
 
+@media (min-width: 768px) {
+  .audio-item {
+    height: 10rem;
+  }
+  .maintext {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 100%;
+    text-align: justify;
+    font-family: "Roboto";
+  }
+  .dotsidebar {
+    background-image: url(../assets/img/svg/dotsSidebar.svg);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+}
+.tiendacontainer {
+  height: 100%;
+  width: 100vw;
+  padding: 3rem;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: "RobotoBold";
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(20%, #7cdaf9), color-stop(20%, white));
+  background-image: linear-gradient(to bottom, #7cdaf9 20%, white 20%);
+}
+
+.title {
+  height: 15vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-align: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  color: whitesmoke;
+}
+
+.articulos {
+  height: 85vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.itemrow1 {
+  background-image: url("../assets/img/smartphone/product01.webp");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: 8rem;
+}
+
+.itemrow2 {
+  background-image: url("../assets/img/smartphone/product02.webp");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: 8rem;
+}
+
+.itemrow3 {
+  background-image: url("../assets/img/smartphone/product03.webp");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: 8rem;
+}
+
+@media (min-width: 768px) {
+  .itemrow1 {
+    background-image: url("../assets/img/desktop/producto01.webp");
+  }
+  .itemrow2 {
+    background-image: url("../assets/img/desktop/producto02.webp");
+  }
+  .itemrow3 {
+    background-image: url("../assets/img/desktop/producto03.webp");
+  }
+}
+.articuloscontainer {
+  height: 100%;
+  width: 100vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-family: "Roboto";
+  padding: 3rem 2rem;
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(20%, #7cdaf9), color-stop(20%, white));
+  background-image: linear-gradient(to bottom, #7cdaf9 20%, white 20%);
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.titlesection {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-align: center;
+  color: whitesmoke;
+  height: 20vh;
+}
+
+.art {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: start;
+  padding-top: 3rem;
+}
+
+.articles {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: start;
+  text-align: start;
+  height: 100vh;
+}
+
+.artimage1 {
+  background-image: url("../assets/img/smartphone/photoDormir.webp");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: 10rem;
+  width: 80vw;
+}
+
+.artimage2 {
+  background-image: url("../assets/img/smartphone/photoMeditar.webp");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: 10rem;
+  width: 80vw;
+}
+
+.artimage3 {
+  background-image: url("../assets/img/smartphone/photoEstrés.webp");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: 10rem;
+  width: 80vw;
+}
+
+@media (min-width: 768px) {
+  .art {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .artimage1 {
+    height: 17rem;
+    background-image: url("../assets/img/desktop/photoDormir.webp");
+  }
+  .artimage2 {
+    height: 20rem;
+    background-image: url("../assets/img/desktop/photoMeditar.webp");
+  }
+  .artimage3 {
+    height: 20rem;
+    background-image: url("../assets/img/desktop/photoEstrés.webp");
+  }
+}
 /* ********* */
 /* @THEMEDARK */
 /* ********* */

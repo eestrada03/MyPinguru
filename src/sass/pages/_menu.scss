@@ -198,3 +198,66 @@
     transform: translateY(0);
   }
 }
+
+@media (min-width: 768px) {
+  .contenedormenu {
+    background-image: url("../assets/img/desktop/Maquetado.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    box-sizing: border-box;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .pingumenu {
+    background-image: url("../assets/img/desktop/Pingulogo.webp");
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 28vh;
+    width: 100%;
+    position: absolute;
+    top: 15%;
+    text-align: center;
+    animation: plus 0.5s ease 0s 1 normal forwards;
+  }
+  .opcionesmenu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 80vh;
+    padding-top: 7rem;
+    animation: slideright 1s ease 0s 1 normal forwards;
+  }
+  .botonmenu {
+    border-radius: 50px;
+    background-color: #7cdaf9;
+    text-align: center;
+    padding: 4.5vh 0px;
+    width: 23vw;
+    border: none;
+    text-decoration: none;
+    font-family: "RobotoBold";
+    font-size: 1.5rem;
+    color: #f2f2f2;
+    -webkit-box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  }
+
+  .headermenu {
+    height: 40vh;
+  }
+
+  .sidebar {
+    width: 40vw;
+  }
+
+  .userLogo {
+    height: 20vh;
+  }
+}

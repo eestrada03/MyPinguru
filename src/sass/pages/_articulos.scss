@@ -1,0 +1,77 @@
+.articuloscontainer {
+  height: 100%;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  font-family: "Roboto";
+  padding: 3rem 2rem;
+  background-image: linear-gradient(to bottom, #7cdaf9 20%, white 20%);
+  box-sizing: border-box;
+}
+
+.titlesection {
+  display: flex;
+  text-align: center;
+  color: whitesmoke;
+  height: 20vh;
+}
+
+.art {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  padding-top: 3rem;
+}
+
+.articles {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  text-align: start;
+  height: 100vh;
+}
+
+.artimage1 {
+  background-image: url("../assets/img/smartphone/photoDormir.webp");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: 10rem;
+  width: 80vw;
+}
+.artimage2 {
+  background-image: url("../assets/img/smartphone/photoMeditar.webp");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: 10rem;
+  width: 80vw;
+}
+.artimage3 {
+  background-image: url("../assets/img/smartphone/photoEstrés.webp");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: 10rem;
+  width: 80vw;
+}
+
+@media (min-width: 768px) {
+  .art {
+    align-items: center;
+  }
+  .artimage1 {
+    height: 17rem;
+    background-image: url("../assets/img/desktop/photoDormir.webp");
+  }
+  .artimage2 {
+    height: 20rem;
+    background-image: url("../assets/img/desktop/photoMeditar.webp");
+  }
+  .artimage3 {
+    height: 20rem;
+    background-image: url("../assets/img/desktop/photoEstrés.webp");
+  }
+}

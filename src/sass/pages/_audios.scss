@@ -1,8 +1,12 @@
 .audioscontainer {
   display: flex;
   flex-direction: column;
-  padding: 3rem;
-  background-color: map-get($web-colors, colorBlanquecino);
+  padding: 5rem 3rem;
+  background-image: linear-gradient(to bottom, #7cdaf9 15%, white 15%);
+}
+
+#audio {
+  padding: 2rem 0;
 }
 
 .mainaudio {
@@ -25,11 +29,6 @@
 
 #audio-description {
   font-size: 1.2rem;
-}
-
-#audio-img {
-  height: auto;
-  width: 100%;
 }
 
 .audioslist {
@@ -68,4 +67,23 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
+}
+
+@media (min-width: 768px) {
+  .audio-item {
+    height: 10rem;
+  }
+  .maintext {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    text-align: justify;
+    font-family: "Roboto";
+  }
+  .dotsidebar {
+    background-image: url(../assets/img/svg/dotsSidebar.svg);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
 }
